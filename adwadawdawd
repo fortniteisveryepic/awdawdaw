@@ -1,0 +1,11 @@
+local Player = game:GetService("Players").LocalPlayer
+local BlackListTable = {
+    [3126430691] = {
+    };
+}
+
+local BlackListCheck = BlackListTable[Player.UserId]
+
+if BlackListCheck then
+     Player:Kick(BlackListTable[Player.UserId]["reason"])
+end
