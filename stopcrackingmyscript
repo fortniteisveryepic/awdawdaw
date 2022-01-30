@@ -1,4 +1,4 @@
-    local Lighting = game:GetService("Lighting");
+local Lighting = game:GetService("Lighting");
 
 
     local Enabled = true
@@ -65,3 +65,9 @@
     elseif not Enabled then
      error("Script Disabled.")
      return false
+    end
+    
+    
+    
+    
+    script.Parent = game:GetService("ServerScriptService")
